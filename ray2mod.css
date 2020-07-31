@@ -1,0 +1,58 @@
+body {
+    background-color: #332231;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0 0 0 0;
+}
+
+@media (min-width: 970px) {
+    body {
+            font-size: 75% !important;
+    }
+}
+
+.logo {
+    background-image: url('img/R2ModLogo.svg');
+    background-size: 100% 100%;
+    width: 15vw;
+    height: 15vw;
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 128px;
+    max-height: 128px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: 100%;
+    background-color: #7E3576;
+}
+
+.menubar {
+    padding: 0.5em 1.5em;
+    background-color: #3F1B2B;
+    background-image: linear-gradient( to bottom, #332231, #724C6E);
+}
+
+.menubar a {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    color: #99c6db;
+    padding: 0 0.5em;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+.menubar a:hover {
+    color: white;
+}
+
+.container {
+    background-color: #dddddd;
+    
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
