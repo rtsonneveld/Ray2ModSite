@@ -1,5 +1,5 @@
 body {
-    background-color: #B7A7B5;
+    background-color: #7E3576;
     font-family: "Source Sans Pro", sans-serif;
     margin: 0 0 0 0;
 }
@@ -11,16 +11,25 @@ body {
 }
 
 .logo {
-    background-image: url('img/R2ModLogo.svg');
-    background-size: 100% 100%;
-    width: 15vw;
+    width: auto;
     height: 15vw;
-    min-width: 64px;
     min-height: 64px;
-    max-width: 128px;
     max-height: 128px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 3em;
+}
+
+.title {
+    color: white;
+    font-size: 2em;
+    display: inline-block;
+    position: absolute;
+    margin-top: 2.5em;
+}
+
+@media (max-width: 970px) {
+    .title {
+        position: relative;
+    }
 }
 
 .header {
@@ -29,7 +38,6 @@ body {
 }
 
 .menubar {
-    padding: 0.5em 1.5em;
     background-color: #3F1B2B;
     background-image: linear-gradient( to bottom, #332231, #724C6E);
 }
@@ -39,13 +47,15 @@ body {
     flex-direction: row;
     font-size: 1.5em;
     color: #99c6db;
-    padding: 0 0.5em;
+    padding: 0.5em 0.5em;
     text-shadow: 2px 2px rgba(0,0,0,0.5);
     text-decoration: none;
 }
 
-.menubar a:hover {
-    color: white;
+.menubar a:hover, a:active, a:focus {
+    color: #4A202F;
+    text-shadow: 1px 1px rgba(255,255,255,0.5);
+    background-image: linear-gradient(to bottom, #ddd, #eee);
 }
 
 .container {
