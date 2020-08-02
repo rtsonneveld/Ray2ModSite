@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-image: linear-gradient(to bottom, #00FFFF -20%, #caf 20%, #724C6E 80%);
+    background-image: linear-gradient(to bottom, #AAFFFF -10%, #caf 20%, #724C6E 80%);
     font-family: "Source Sans Pro", sans-serif;
     margin: 0 0 0 0;
     font-size: 2em;
@@ -50,6 +50,15 @@ body {
     background-image: linear-gradient( to bottom, #332231, #724C6E);
 }
 
+a:hover {
+    color: #7E3576;
+}
+
+a {
+    color: #2293b6;
+    text-decoration: none;
+}
+
 .menubar a {
     display: inline-flex;
     flex-direction: row;
@@ -60,7 +69,7 @@ body {
     text-decoration: none;
 }
 
-.menubar a:hover, a:active, a:focus {
+.menubar a:hover, .menubar a.active {
     color: #4A202F;
     text-shadow: 1px 1px rgba(255,255,255,0.5);
     background-image: linear-gradient(to bottom, #ddd, #F0E8FF);
@@ -86,6 +95,6 @@ body {
     box-shadow: 2px 2px 4px rgba(114,76,110,0.25);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
     text-align: center;
 }
